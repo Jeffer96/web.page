@@ -1,0 +1,77 @@
+:root {
+  --tema:#f0f0f0; 
+  --tema1:#003d68;
+  --contrast:#ffffff;
+  --constrasth:#71D2FF;
+  --constrasts:#00AEFF;
+}
+
+
+*{
+	margin: 0%;
+}
+
+#NavBar{
+	width: 100vw;
+	background-color: black;
+	height: 6vh;
+	display: flex;
+	background-color: var(--tema1); 
+	padding-bottom: 1vh;
+	padding-top: 1vh;
+	position: absolute;
+	top: 1vh;
+}
+
+#logoMenu{
+	width: 30%;
+	height: 100%;
+	margin-left: 20%;
+}
+
+#MenuBar{
+	width: 30%;
+	height: 49%;
+	background-color: var(--tema1);
+	display: flex;
+	margin-right: 5%;
+	padding-top: 1%;
+}
+
+#MenuBar > a {
+	width: 25%;
+	padding-top: 0.5%;
+	text-align: center;
+	font-family: arial black;
+	cursor: pointer;
+}
+
+#MenuBar > a:hover {
+	color: var(--constrasth);
+}
+
+.selected{
+	font-size: 1.9vh;
+	color: var(--constrasts);
+}
+
+.unSelected{
+	font-size: 1.8vh;
+	color: var(--contrast);
+}
+
+#MenuBar > hr{ 
+	width: 1px;
+	background-color: white;
+    height: 90%;
+}
+
+#anim{
+	height:100%;
+}
+
+#dynamicContent{
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 10vh;
+}

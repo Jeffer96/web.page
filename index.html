@@ -1,0 +1,31 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title> D&M airefresco de Colombia Ltda </title>
+		<link rel = "shortcut icon" href="resources/images/logo.png" type="image/png">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
+		<script src = "resources/js/event.js"></script>
+		<link rel = "stylesheet" href = "resources/css/style.css">
+	</head>
+
+	<body onload="onLoad()">
+		<div id="NavBar">
+			<div id="logoMenu">
+				<img id="anim" src="resources/images/anim_dark.gif">
+			</div>
+			<div id="MenuBar">
+				<hr/>
+				<a id="Inicio" onclick="goTo('Inicio','inicio.html')" class="selected">Inicio</a>
+				<hr/>
+				<a id="Servicios" onclick="goTo('Servicios','servicios.html')" class="unSelected">Servicios</a>
+				<hr/>
+				<a id="Acerca" onclick="goTo('Acerca','acerca.html')" class="unSelected">Conozcanos</a>
+				<hr/>
+				<a id="Contacto" onclick="goTo('Contacto','contacto.html')" class="unSelected">Contacto</a>
+				<hr/>
+			</div>
+		</div>
+		<div id="dynamicContent">
+		</div>
+	</body>
+</html>
