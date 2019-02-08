@@ -1,0 +1,38 @@
+/** animation hover cards index **/
+
+.cardImage:hover{
+	/*animation for fading */
+    -webkit-animation-name: fundido;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: fundido;
+    -moz-animation-duration: 1s;
+    -ms-animation-name: fundido;
+    -ms-animation-duration: 1s;
+    animation-name: fundido;
+    animation-duration: 1s;
+}
+
+@keyframes fundido {
+  from {background-size: 100%} 
+  to {background-size: 120%}
+}
+
+@-webkit-keyframes fundido {
+  from {background-size: 100% 100%} 
+  to {background-size: 120%}
+}
+
+@-moz-keyframes fundido {
+  from {background-size: 100% 100%} 
+  to {background-size: 120%}
+}
+
+@-ms-keyframes fundido {
+  from {background-size: 100% 100%} 
+  to {background-size: 120%}
+}
+
+@-0-keyframes fundido {
+  from {background-size: 100% 100%} 
+  to {background-size: 120%}
+}

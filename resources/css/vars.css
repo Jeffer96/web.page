@@ -1,0 +1,51 @@
+:root {
+  --temaw1:#383838; 
+  --temaw2:#000000;
+  --tema1:#000D2C;
+  --tema2:#004B87;
+
+  --gaisnboro: #EBEBEB;
+  --contrast:#FFFFFF;
+  --contrasth:#DADADADA;
+  --contrasts:#4ec3ff;
+}
+
+*{
+	margin: 0%;
+	padding: 0%;
+	font-family: arial;
+}
+
+h1{
+	width: 98%;
+	padding: 1%;
+	text-align: center;
+	font-size: 2vw;
+	color: white;
+	/*background-image: linear-gradient(to right, var(--tema1), var(--tema2) 20%,var(--tema2) 80%, var(--tema1));*/
+	background-color: var(--tema2);
+}
+
+h2{
+	text-align: left;
+	font-size: 2.4vw;
+	color: var(--tema2);
+}
+
+h3{
+	text-align: left;
+	font-size: 1.8vw;
+	color: var(--tema1);
+}
+
+li{
+	text-align: left;
+	font-size: 1.3vw;
+}
+
+p{
+	font-size: 1.3vw;
+	line-height: 1.4;
+	text-align: justify;
+	padding-left: 1.5vw;
+}

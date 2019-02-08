@@ -1,40 +1,40 @@
-:root {
-  --tema:#f0f0f0; 
-  --tema1:#003d68;
-  --contrast:#ffffff;
-  --constrasth:#71D2FF;
-  --constrasts:#00AEFF;
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-
-*{
-	margin: 0%;
+body{
+	background-image: url("../images/support/background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #NavBar{
 	width: 100vw;
-	background-color: black;
-	height: 6vh;
+	height: 8vh;
 	display: flex;
-	background-color: var(--tema1); 
-	padding-bottom: 1vh;
-	padding-top: 1vh;
+	/*background-image: linear-gradient(to right, var(--tema1),  var(--tema2), var(--tema1));*/
+	background-image: url('../images/support/navBarBack2.jpg');
+	background-size: 100% 100%;
+	box-shadow: 0px 0px 25px black;
 	position: absolute;
-	top: 1vh;
+	z-index: 1;
 }
 
 #logoMenu{
 	width: 30%;
 	height: 100%;
-	margin-left: 20%;
+	margin-left: 15%;
+	cursor: pointer;
 }
 
 #MenuBar{
 	width: 30%;
-	height: 49%;
-	background-color: var(--tema1);
 	display: flex;
-	margin-right: 5%;
+	margin-left: 10%;
+	margin-top: 2vh;
 	padding-top: 1%;
 }
 
@@ -44,26 +44,31 @@
 	text-align: center;
 	font-family: arial black;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 #MenuBar > a:hover {
-	color: var(--constrasth);
+	color: var(--contrasth);
 }
 
 .selected{
 	font-size: 1.9vh;
-	color: var(--constrasts);
+	color: var(--contrast);
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.0), var(--tema2), rgba(0,0,0,0.0) 80%);
 }
 
 .unSelected{
 	font-size: 1.8vh;
-	color: var(--contrast);
+	color: var(--contrasts);
 }
 
-#MenuBar > hr{ 
-	width: 1px;
-	background-color: white;
-    height: 90%;
+#MenuBar > p{ 
+	font-size: 2.0vh;
+	font-family: bold;
+	color: gray;
+	cursor: default;
+	text-shadow: 0px 0px 15px blue;
+	padding: 0px;
 }
 
 #anim{
@@ -71,7 +76,44 @@
 }
 
 #dynamicContent{
-	width: 70%;
+	width: 70vw;
+	border: 0px;
+	margin-top: 8vh;
 	margin-left: 15%;
-	margin-top: 10vh;
+	border-radius: 0vh 0vh 0vh 3vh;
+	background-color: rgba(255,255,255,0.8);
 }
+
+#footer{
+	margin-top: 1vh;
+	height: 6vh;
+	width: 100%;
+	background-image: url("../images/support/navBarBack.jpg");
+	background-size: 100% 100%;
+	padding-top: 2vh;
+}
+
+#footer > p {
+	text-align: center;
+	color:  white;
+	font-size: 1vw;
+}
+
+.floatingscrooll{
+	position: fixed;
+	margin-left: 90vw;
+	width: 5vw;
+	height: 5vw;
+	z-index: 1;
+	opacity: 0.5;
+	display: none;
+}
+
+.up{
+	margin-top: 15vh;
+}
+
+.down{
+	margin-top: 85vh;
+}
+

@@ -1,31 +1,39 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<title> D&M airefresco de Colombia Ltda </title>
+		<title> D & M airefresco de Colombia Ltda </title>
 		<link rel = "shortcut icon" href="resources/images/logo.png" type="image/png">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
 		<script src = "resources/js/event.js"></script>
+		<link rel = "stylesheet" href = "resources/css/vars.css">
 		<link rel = "stylesheet" href = "resources/css/style.css">
 	</head>
 
-	<body onload="onLoad()">
+	<body onload="loaded()">
+		<img class="floatingscrooll up" src="resources/images/support/up.png" onclick="up"/>  
+		<img class="floatingscrooll down" src="resources/images/support/down.png" onclick="down"/>  
 		<div id="NavBar">
 			<div id="logoMenu">
-				<img id="anim" src="resources/images/anim_dark.gif">
+				<img id="anim" src="resources/images/anim_dark.gif" onclick="selected('LIDX')"/>
 			</div>
 			<div id="MenuBar">
-				<hr/>
-				<a id="Inicio" onclick="goTo('Inicio','inicio.html')" class="selected">Inicio</a>
-				<hr/>
-				<a id="Servicios" onclick="goTo('Servicios','servicios.html')" class="unSelected">Servicios</a>
-				<hr/>
-				<a id="Acerca" onclick="goTo('Acerca','acerca.html')" class="unSelected">Conozcanos</a>
-				<hr/>
-				<a id="Contacto" onclick="goTo('Contacto','contacto.html')" class="unSelected">Contacto</a>
-				<hr/>
+				<p>|</p>
+				<a id="LIDX" class="selected" onclick="selected('LIDX')">Inicio</a>
+				<p>|</p>
+				<a id="LSRV" class="unSelected" onclick="selected('LSRV')">Servicios</a>
+				<p>|</p>
+				<a id="LACR" class="unSelected" onclick="selected('LACR')">Conozcanos</a>
+				<p>|</p>
+				<a id="LCTO" class="unSelected" onclick="selected('LCTO')">Contacto</a>
+				<p>|</p>
+
 			</div>
 		</div>
-		<div id="dynamicContent">
+		<iframe name="main" id="dynamicContent" scrolling="no" frameborder="0"></iframe>
+		<div id="footer">
+			<p>© Copyright 2017 Airefresco de Colombia Ltda | Creado por airefresco </p>
 		</div>
 	</body>
 </html>
+
+
