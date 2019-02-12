@@ -11,6 +11,16 @@ body{
 	background-size: cover;
 }
 
+#loading{
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+}
+
+#content{
+	display: none;
+}
+
 #NavBar{
 	width: 100vw;
 	height: 8vh;
@@ -88,7 +98,7 @@ body{
 	margin-top: 1vh;
 	height: 6vh;
 	width: 100%;
-	background-image: url("../images/support/navBarBack.jpg");
+	background-image: url("../images/support/navBarBack2.jpg");
 	background-size: 100% 100%;
 	padding-top: 2vh;
 }
@@ -99,21 +109,4 @@ body{
 	font-size: 1vw;
 }
 
-.floatingscrooll{
-	position: fixed;
-	margin-left: 90vw;
-	width: 5vw;
-	height: 5vw;
-	z-index: 1;
-	opacity: 0.5;
-	display: none;
-}
-
-.up{
-	margin-top: 15vh;
-}
-
-.down{
-	margin-top: 85vh;
-}
 

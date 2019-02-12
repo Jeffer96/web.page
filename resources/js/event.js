@@ -1,10 +1,18 @@
-var menuSelected;var dc;var blocked = true;var links = {'LIDX':"inicio.html",'LSRV':"servicios.html",'LACR':"acerca.html",'LCTO':"contacto.html",'portal':"portal.airefrescodecolombia.com"};
+var menuSelected;var dc; var bd;var blocked;var links = {'LIDX':"inicio.html",'LSRV':"servicios.html",'LACR':"acerca.html",'LCTO':"contacto.html",'portal':"portal.airefrescodecolombia.com"};
 
 function loaded(){
 	dc = document.getElementById("dynamicContent");
+	bd = document.getElementById("mainFrame");
 	menuSelected = "LIDX";
+	blocked=true;
+	document.getElementById("loading").style.display="none";
+	document.getElementById("content").style.display="inline";
 	loadLink(links[menuSelected]);
 	//document.getElementById("dynamicContent").onload = animate();
+}
+
+function selectedFromIframe(id){
+	parent.document.getElementById(id).click();
 }
 
 function selected(id){
@@ -15,8 +23,7 @@ function selected(id){
 		document.getElementById(menuSelected).setAttribute("class","unSelected");
 		document.getElementById(menuSelected).setAttribute("class","selected");
 		loadLink(links[menuSelected]);
-	}
-		
+	}	
 }
 
 function loadLink(url){
@@ -38,6 +45,10 @@ function loadLink(url){
 			}
 		}
 	};
+}
+
+function downTo(id){
+	parent.window.scrollTo(0,document.getElementById(id).offsetTop+100);
 }
 
 

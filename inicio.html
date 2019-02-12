@@ -8,63 +8,53 @@
 		<link rel = "stylesheet" href = "resources/css/animationFrames.css">
 	</head>
 	<body>
-		<div id="slide">
-			<!--img id="slideBack" src="resources/images/slide/background.jpg"/-->
-			<div id="slide1" class="slideImg"/>
-			<div id="slide2" class="slideImg"/>
-			<div id="slide3" class="slideImg"/>
-			<div id="slide4" class="slideImg"/>
-			
-			<div id="leftControl" class="controlSlide">
-				<h1> < </h1>
-			</div>
-			<div id="rightControl" class="controlSlide">
-				<h1> > </h1>
-			</div>
+		<div id="leftControl" class="controlSlide">
+			<h1> < </h1>
 		</div>
-		
-		<div id="indexBody">
-			<section style="display: flex">
+		<div id="rightControl" class="controlSlide">
+			<h1> > </h1>
+		</div>
+		<div id="slide">
+			<div id="slideImg"></div>			
+		</div>
+		<div style="display: flex">
+			<section class="section60">
 			
-				<section class="card30" id="nuestroEquipo">
-					<h1>Servicios</h1>
-					<p><i>servicios de Diseño, 
-						Suministro, instalación, Mantenimiento y Reparación de sistemas de aire acondicionado, ventilacion mecanica y refrigeración, garantizando el correspondiente soporte técnico post-venta. 
-						<b>Ofrecemos atención al cliente a nivel nacional, si estas interesado comunicate a nuestras lineas y obten una visita ténica totalmente gratuita para asesorarte mejor.</b></i>
-					</p>
+				<section style="display: flex" id="intro">
+					<section class="card50" id="nuestroServicio">
+						<h1>Servicios</h1>
+						<p><i>servicios de Diseño, 
+							Suministro, instalación, Mantenimiento y Reparación de sistemas de aire acondicionado, ventilacion mecanica y refrigeración, garantizando el correspondiente soporte técnico post-venta. 
+							<b>Ofrecemos atención al cliente a nivel nacional, si estas interesado comunicate a nuestras lineas y obten una visita ténica totalmente gratuita para asesorarte mejor.</b></i>
+						</p>
+						
+						<a onclick="selectedFromIframe('LSRV')"> saber más...</a>
+					</section>
+					
+					<section class="card50" id="nuestroEquipo">
+						<h1>Nuestro Equipo</h1>
+						<p><i>Con amplio conocimiento y una disposicion absoluta para brindarle el mejor servicio, nuestro equipo de trabajo se conforma por personas calificadas, talentosas y dispuestas
+							a dar lo mejor de si mismos para satisfacer enormemente a nuestros clientes</i>
+						</p>
+						
+						<a onclick="selectedFromIframe('LACR')"> saber más...</a>
+					</section>
 				</section>
-				
-				<section class="card30" id="nuestroEquipo">
-					<h1>Nuestro Equipo</h1>
-					<p><i>Con amplio conocimiento y una disposicion absoluta para brindarle el mejor servicio, nuestro equipo de trabajo se conforma por personas calificadas, talentosas y dispuestas
-						a dar lo mejor de si mismos para satisfacer enormemente a nuestros clientes</i>
-					</p>
-				</section>
-								
-				<section class="card30" id="contacto">
-					<h2>Contáctanos</h2>
-					<p style="padding: 0px;color: white;margin-left:2vw;"><i>Estamos para ayudarte</i></p>
-					<h3>Teléfono</h3>
-					<ul>
-						<li>810 7304</li>
-						<li>375 0731</li>
-					</ul>
-					<h3>Celular</h3>
-					<ul>
-						<li>312 562 7059</li>
-						<li>313 466 3398</li>
-					</ul>
-					<h3>Correo</h3>
-					<ul>
-						<li>servicioalcliente@airefrescodecolombia.com</li>
-						<li>comercial.ech@airefrescodecolombia.com</li>
-					</ul>
-				</section>
-			</section>
-			
-			<section style="display: flex;">
-				<div id="enfoque" class="card60">
-					<h2 style="align-text: left">¿Porque elegirnos?</h2>
+												
+				<div id="enfoque" class="card100" style="padding-top:2vw">
+					<section style="display: flex; width: 100%;">
+						<h2 style="align-text: left; width: 50%; padding: 0.5vh;">¿Porque elegirnos?</h2>
+						<div id="downIndexImg" onclick="downTo('enfoque')"></div>
+					</section>
+					<section>
+						<img src="resources/images/inicio/responsabilidad.png"  class="elegirImg"></img>
+						<section>
+							<h3>Responsables</h3>
+							<p>
+								Comprometidos con el bienestar de nuestros clientes y el medio ambiente, nuestras politicas vigilan el cuidado de la naturaleza.
+							</p>
+						</section>
+					</section>
 					<section>
 						<img src="resources/images/inicio/confianza.png"  class="elegirImg"></img>
 						<section>
@@ -74,7 +64,7 @@
 							</p>
 						</section>
 					</section>
-					<section >
+					<section>
 						<img src="resources/images/inicio/rapidez.png" class="elegirImg" ></img>
 						<section>
 							<h3>Eficaces</h3>
@@ -83,7 +73,7 @@
 							</p>
 						</section>
 					</section>
-					<section >
+					<section>
 						<img src="resources/images/inicio/calidad.png" class="elegirImg" ></img>
 						<section>
 							<h3>Eficientes</h3>
@@ -103,8 +93,51 @@
 						</section>
 					</section>
 				</div>
-			</section>		
+			</section>	
 			
+			<section class="section30">
+				<section class="card30" id="contacto">
+					<h2>Contáctanos</h2>
+					<p style="padding: 0px;color: white;margin-left:2vw;"><i>Estamos para ayudarte</i></p>
+					<h3>Teléfono</h3>
+					<ul>
+						<li>810 7304</li>
+						<li>375 0731</li>
+					</ul>
+					<h3>Celular</h3>
+					<ul>
+						<li>312 562 7059</li>
+						<li>313 466 3398</li>
+					</ul>
+					<h3>Correo</h3>
+					<ul>
+						<li>servicioalcliente@airefrescodecolombia.com</li>
+						<li>comercial.ech@airefrescodecolombia.com</li>
+					</ul>
+				</section>
+				<section class="card30" id="news">
+					<div>
+						<div class="cardIcon" style="background-image: linear-gradient(to top, #004d07, #00a10f);"><center>07 <hr> Sep</center></div>
+						<p>
+						</p>
+					</div>
+					<div>
+						<div class="cardIcon" style="background-image: linear-gradient(to top, #004d07, #00a10f);"><center>16 <hr> Nov</center></div>
+						<p>
+						</p>
+					</div>
+					<div>
+						<div class="cardIcon" style="background-image: linear-gradient(to top, #004d07, #00a10f);"><center>23 <hr> Abr</center></div>
+						<p>
+						</p>
+					</div>
+					<div>
+						<div class="cardIcon" style="background-image: linear-gradient(to top, #004d07, #00a10f);"><center>12 <hr> Feb</center></div>
+						<p>
+						</p>
+					</div>
+				</section>
+		</section>
 		</div>
 	</body>
 </html>

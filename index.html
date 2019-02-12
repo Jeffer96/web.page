@@ -8,30 +8,30 @@
 		<link rel = "stylesheet" href = "resources/css/vars.css">
 		<link rel = "stylesheet" href = "resources/css/style.css">
 	</head>
+	<body id ="mainFrame" onload="loaded()">
+		<div id="loading"></div>
+		<div id="content">
+			<div id="NavBar">
+				<div id="logoMenu">
+					<img id="anim" src="resources/images/anim_dark.gif" onclick="selected('LIDX')"/>
+				</div>
+				<div id="MenuBar">
+					<p>|</p>
+					<a id="LIDX" class="selected" onclick="selected('LIDX')">Inicio</a>
+					<p>|</p>
+					<a id="LSRV" class="unSelected" onclick="selected('LSRV')">Servicios</a>
+					<p>|</p>
+					<a id="LACR" class="unSelected" onclick="selected('LACR')">Conozcanos</a>
+					<p>|</p>
+					<a id="LCTO" class="unSelected" onclick="selected('LCTO')">Contacto</a>
+					<p>|</p>
 
-	<body onload="loaded()">
-		<img class="floatingscrooll up" src="resources/images/support/up.png" onclick="up"/>  
-		<img class="floatingscrooll down" src="resources/images/support/down.png" onclick="down"/>  
-		<div id="NavBar">
-			<div id="logoMenu">
-				<img id="anim" src="resources/images/anim_dark.gif" onclick="selected('LIDX')"/>
+				</div>
 			</div>
-			<div id="MenuBar">
-				<p>|</p>
-				<a id="LIDX" class="selected" onclick="selected('LIDX')">Inicio</a>
-				<p>|</p>
-				<a id="LSRV" class="unSelected" onclick="selected('LSRV')">Servicios</a>
-				<p>|</p>
-				<a id="LACR" class="unSelected" onclick="selected('LACR')">Conozcanos</a>
-				<p>|</p>
-				<a id="LCTO" class="unSelected" onclick="selected('LCTO')">Contacto</a>
-				<p>|</p>
-
+			<iframe name="main" id="dynamicContent" scrolling="no" frameborder="0"></iframe>
+			<div id="footer">
+				<p>© Copyright 2017 Airefresco de Colombia Ltda | Creado por airefresco </p>
 			</div>
-		</div>
-		<iframe name="main" id="dynamicContent" scrolling="no" frameborder="0"></iframe>
-		<div id="footer">
-			<p>© Copyright 2017 Airefresco de Colombia Ltda | Creado por airefresco </p>
 		</div>
 	</body>
 </html>
